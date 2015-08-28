@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<h1>Pick the one filmed in <%= @year %></h1>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div>
+			<% @mostrar.each do |poster, año| %>
+				<% if año == @year %>
+					<img src="<%= poster.to_s %>" onClick="alert('Correct!')" height="400" width="240">
+				<% else %>
+					<img src="<%= poster.to_s %>" onClick="alert('Incorrect! Try again!')" height="400" width="240">
+				<% end %>
+			<% end %>
+		</div>
+	</body>
+</html>
