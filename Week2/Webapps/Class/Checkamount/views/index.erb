@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div>Insert the number to convert</div>
+		<div class="box">
+		<form action="/convert" method="POST">
+		<input type="number" name="input">
+		</form>
+		</div>
+		<div>Converted number:
+		<%= @convertednumber %>
+		</div>
+	</body>
+</html>
