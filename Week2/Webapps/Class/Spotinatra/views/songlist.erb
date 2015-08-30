@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div>Song List</div>
+		<div class="box">
+		<% @songs.each do |song| %>
+			<p><%= song[0] %> - <%= song[1] %> </p>
+		<% end %>
+		</div>
+	</body>
+</html>
